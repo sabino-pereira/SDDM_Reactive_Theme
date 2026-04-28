@@ -2,7 +2,7 @@ import QtQuick
 
 QtObject {
 	
-	readonly property color background: "#12140e"
+	readonly property color background: "#11140f"
 	
 	readonly property color error: "#ffece9"
 	
@@ -10,11 +10,11 @@ QtObject {
 	
 	readonly property color inverse_on_surface: "#000000"
 	
-	readonly property color inverse_primary: "#344f18"
+	readonly property color inverse_primary: "#2e501e"
 	
-	readonly property color inverse_surface: "#e2e3d8"
+	readonly property color inverse_surface: "#e1e4d9"
 	
-	readonly property color on_background: "#e2e3d8"
+	readonly property color on_background: "#e1e4d9"
 	
 	readonly property color on_error: "#000000"
 	
@@ -26,7 +26,7 @@ QtObject {
 	
 	readonly property color on_primary_fixed: "#000000"
 	
-	readonly property color on_primary_fixed_variant: "#071400"
+	readonly property color on_primary_fixed_variant: "#031500"
 	
 	readonly property color on_secondary: "#000000"
 	
@@ -34,7 +34,7 @@ QtObject {
 	
 	readonly property color on_secondary_fixed: "#000000"
 	
-	readonly property color on_secondary_fixed_variant: "#0b1404"
+	readonly property color on_secondary_fixed_variant: "#091405"
 	
 	readonly property color on_surface: "#ffffff"
 	
@@ -46,60 +46,60 @@ QtObject {
 	
 	readonly property color on_tertiary_fixed: "#000000"
 	
-	readonly property color on_tertiary_fixed_variant: "#001414"
+	readonly property color on_tertiary_fixed_variant: "#001415"
 	
-	readonly property color outline: "#eef2e3"
+	readonly property color outline: "#edf2e4"
 	
-	readonly property color outline_variant: "#c0c4b6"
+	readonly property color outline_variant: "#bfc4b7"
 	
-	readonly property color primary: "#d9fbb1"
+	readonly property color primary: "#d2fcb8"
 	
-	readonly property color primary_container: "#accd88"
+	readonly property color primary_container: "#a5ce8e"
 	
-	readonly property color primary_fixed: "#cbeea5"
+	readonly property color primary_fixed: "#c4efab"
 	
-	readonly property color primary_fixed_dim: "#b0d18b"
+	readonly property color primary_fixed_dim: "#a9d291"
 	
 	readonly property color scrim: "#000000"
 	
-	readonly property color secondary: "#e8f4d5"
+	readonly property color secondary: "#e6f5d8"
 	
-	readonly property color secondary_container: "#bbc7aa"
+	readonly property color secondary_container: "#b9c7ac"
 	
-	readonly property color secondary_fixed: "#dbe7c8"
+	readonly property color secondary_fixed: "#d8e7cb"
 	
-	readonly property color secondary_fixed_dim: "#bfcbad"
+	readonly property color secondary_fixed_dim: "#bccbb0"
 	
 	readonly property color shadow: "#000000"
 	
-	readonly property color source_color: "#b2d889"
+	readonly property color source_color: "#425338"
 	
-	readonly property color surface: "#12140e"
+	readonly property color surface: "#11140f"
 	
-	readonly property color surface_bright: "#4e5149"
+	readonly property color surface_bright: "#4e514a"
 	
-	readonly property color surface_container: "#2f312a"
+	readonly property color surface_container: "#2e312b"
 	
-	readonly property color surface_container_high: "#3a3c35"
+	readonly property color surface_container_high: "#393c35"
 	
-	readonly property color surface_container_highest: "#454840"
+	readonly property color surface_container_highest: "#444840"
 	
-	readonly property color surface_container_low: "#1e211a"
+	readonly property color surface_container_low: "#1d211a"
 	
 	readonly property color surface_container_lowest: "#000000"
 	
-	readonly property color surface_dim: "#12140e"
+	readonly property color surface_dim: "#11140f"
 	
-	readonly property color surface_tint: "#b0d18b"
+	readonly property color surface_tint: "#a9d291"
 	
-	readonly property color surface_variant: "#44483d"
+	readonly property color surface_variant: "#43483e"
 	
-	readonly property color tertiary: "#c9f9f6"
+	readonly property color tertiary: "#c9f9fa"
 	
-	readonly property color tertiary_container: "#9cccc8"
+	readonly property color tertiary_container: "#9ccbcc"
 	
-	readonly property color tertiary_fixed: "#bbece8"
+	readonly property color tertiary_fixed: "#bbebec"
 	
-	readonly property color tertiary_fixed_dim: "#a0cfcc"
+	readonly property color tertiary_fixed_dim: "#a0cfd0"
 	
 }

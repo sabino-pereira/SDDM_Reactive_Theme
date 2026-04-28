@@ -24,7 +24,7 @@ Item {
     
 
     readonly property color secondaryMonitorBgColor: Qt.rgba(0, 0, 0, 1)
-    readonly property string secondaryMonitorQuote:  "Multiple Monitors?\nIn this economy???"
+    readonly property string secondaryMonitorQuote:  "Multiple Monitors?\nIn this economy??!!"
 
 
     readonly property string timeFormat: "hh:mm"
@@ -90,7 +90,7 @@ Item {
     property bool sessionPopupOpen:   false
     property bool powerMenuOpen:      false 
 
-    focus: true
+    // focus: primaryScreen
 
     // Watch for login failures
     Connections {
@@ -140,9 +140,10 @@ Item {
         currentUserIndex = (lastUserIndex && lastUserIndex < userModel.count) ? lastUserIndex : 0
 
         // Force focus on password input
-        passwordInput.forceActiveFocus();
+        // if(primaryScreen) {
+        //     passwordInput.forceActiveFocus();
+        // }
     }
-
 
 
     ////////////////////////////////////////////
@@ -171,7 +172,7 @@ Item {
         }
     }
 
-    // Dimiss open menus and unfocus password on clicking outside
+    // Dimiss open menus when clicked anywhere else
     MouseArea {
         anchors.fill: parent
         
@@ -180,8 +181,9 @@ Item {
             root.userPopupOpen    = false;
             root.powerMenuOpen   = false;
             
-            // Natively drops focus from the passwordInput
-            root.forceActiveFocus();
+            if (primaryScreen) {
+                passwordInput.forceActiveFocus();
+            }
         }
     }
 
@@ -286,8 +288,8 @@ Item {
         font.pixelSize: fontSizeHuge
         font.family:    fontFamilyFancy
         
-        // style:      Text.Raised
-        // styleColor: "#3F3F15" 
+        style:      Text.Outline
+        styleColor: borderBase
 
         // Change on click
         MouseArea {
@@ -887,6 +889,7 @@ Item {
             Keys.onReturnPressed: attemptLogin()
             Keys.onEnterPressed:  attemptLogin()
 
+            // Cycle through users using the Tab Key
             Keys.onTabPressed: function(event) {
                 if (userModel.count > 0) {
                     root.currentUserIndex = (root.currentUserIndex + 1) % userModel.count;
