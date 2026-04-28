@@ -5,6 +5,7 @@
 
 ### Preview
 ![image](preview.png)
+![image](preview2.png)
 
 ### Installation Steps
 1. Clone this Repository
