@@ -1,0 +1,4 @@
+[SddmGreeterTheme]
+Name=reactive
+X-KDE-ServiceTypes=SDDM/SddmGreeterTheme
+QtVersion=6
