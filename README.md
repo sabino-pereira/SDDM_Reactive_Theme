@@ -18,7 +18,7 @@ sudo cp -r reactive /usr/share/sddm/themes/
 cd /usr/share/sddm/themes/reactive
 sudo chown $USER:$USER Matugen.qml assets/background
 ```
-4. Edit `/etc/sddm.conf` and set theme value to `reactive:
+4. Edit `/etc/sddm.conf` and set theme value to `reactive`:
 ```
 ..
 ..
